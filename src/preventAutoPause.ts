@@ -14,7 +14,7 @@ export default function preventAutoPause() {
   const handleVideoPause = () => {
     console.log("userscript-bilibili-guest: pause");
     if (!userHasInteracted) {
-      videoElement && videoElement.play();
+      videoElement && videoElement.click();
       console.log("Trying to prevent auto pause ###", new Date());
       userHasInteracted = false;
     }
