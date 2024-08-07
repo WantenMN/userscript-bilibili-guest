@@ -3,7 +3,11 @@ import preventAutoPause from "./preventAutoPause";
 
 async function main() {
   blockElements();
-  window.onload = preventAutoPause;
+  window.onload = () => {
+    setTimeout(() => {
+      preventAutoPause();
+    }, 10 * 1000);
+  };
 }
 
 main();
