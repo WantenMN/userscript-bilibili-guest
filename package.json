@@ -39,7 +39,7 @@
     "namespace": "http://tampermonkey.net/",
     "license": "https://opensource.org/licenses/MIT",
     "match": [
-      "https://www.bilibili.com/*"
+      "https://*.bilibili.com/*"
     ],
     "require": [],
     "grant": [
